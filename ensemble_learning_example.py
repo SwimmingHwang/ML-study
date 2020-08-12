@@ -37,3 +37,16 @@ for clf in (log_clf, rnd_clf, svm_clf, voting_clf):
     clf.fit(X_train, y_train)
     y_pred = clf.predict(X_test)
     print(clf.__class__.__name__, accuracy_score(y_test, y_pred))
+
+'''
+X_train shape: (8000, 2)
+X_test shape: (2000, 2)
+y_train shape: (8000,)
+y_test shape: (2000,)
+LogisticRegression 0.882
+RandomForestClassifier 0.992
+SVC 0.991
+VotingClassifier 0.9915
+'''
+
+
